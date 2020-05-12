@@ -1,0 +1,60 @@
+.container{
+        background-color:#feb300;
+        border:solid 1px black;
+        padding-left:20px;
+        min-height:160px; 
+        max-height:230px;
+        width:490px;
+        margin:170px auto;
+}
+#icon {
+        position:absolute;
+        right:5px;
+        top:12px;
+        cursor: pointer;
+        opacity:0.9;
+        transition:ease 1s all;
+    }
+.messages{
+        text-transform: capitalize;
+        text-align: center;
+        margin:10px auto;
+        border:solid 1px black;
+        background-color: red;
+        color:white;
+        display:float;
+        padding:4px 10px;
+        font-size:17px;
+}
+.form{
+        margin:20px auto;
+}
+.inf{
+        display:table-row;
+        position:relative;
+}
+.inf label{
+        display: table-cell;
+        padding:8px;
+        text-align: right;
+        font-weight: bold;
+        font-size:19px;
+        color:black;
+}
+.inf input{
+        padding-left:8px;
+        padding-top:3px;
+        font-size:17px;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.submit{
+        margin:20px 130px;
+}
+.heading{
+        font-weight:bold;
+        text-align:center;
+        font-size:30px;
+        background-color:white;
+        padding:6px;
+
+}

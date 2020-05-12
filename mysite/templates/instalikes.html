@@ -1,0 +1,38 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<link rel="stylesheet" type="text/css" href="{% static 'styles/instalikes.css' %}">
+	<link rel="stylesheet" type="text/css" href="{% static 'fontawesome/css/all.css' %}">
+	<script src="{% static 'js/instalikes.js' %}"></script>
+</head>
+<body>
+<div id="container">
+{% for i in l%}
+<div class="images">
+<img  src="{{i.image.url}}" onload="image_loaded({{i.id}},this)" ondblclick="likeByImage({{i.id}},this)" class="image" width="150" height="150">
+<div class="heart">
+<i onclick="menu({{i.id}},this)" class="far fa-heart"></i>
+</div>
+<p>Liked by  <a href="javascript:getLikes({{i.id}})"> {{i.likes}} others </a></p>
+</div>
+{% endfor %}
+</div>
+<div id="likedby">
+	<div id="content">
+		<div id="heading">
+			<p>Likes</p>
+			<div id="close"> 
+				+
+			</div>
+		</div>
+		<div id="likes">
+		</div>	
+	</div>
+</div>
+<script src="{% static 'js/instalikes.js' %}"></script>
+</body>
+</html>

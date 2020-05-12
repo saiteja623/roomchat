@@ -1,0 +1,91 @@
+.container{
+    background-color:#8bf0ba;
+    border:solid 1px black;
+    padding:20px;
+    border-radius:10px;
+    min-height:400px;
+    width:590px;
+    font-size:20px;
+    margin:80px 640px;
+    color:#0e0fed;
+    position:absolute;
+    animation:bgcolor 20s ease infinite;
+} 
+.container input{
+    padding-left:8px;
+    padding-top:3px;
+    font-size:17px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+body{
+    background-size:cover;
+}
+.image{
+    margin-top:150px;
+    margin-left:100px;
+    float:left;
+    opacity:0.5;
+    width:100px;
+    height:100px;
+}
+.heading{
+    color:white;
+    background-color:red;
+    overflow:hidden;
+    height:50px;
+}
+.heading .text{
+    font-size:30px;
+    text-transform: uppercase;
+    line-height: 50px;
+    text-align:center;
+    font-weight:bold;
+}
+.text:first-child{
+    animation:change 12s infinite;
+}
+@keyframes change{
+    0%{
+        margon-top:0;
+    }
+    23%{
+        margin-top:-50px;
+    }
+    49%{
+        margin-top:-100px;
+    }
+    73%{
+        margin-top:-150px;
+    }
+    99%{
+        margin-top:-200px;
+    }
+    100%{
+        margin-top:-201px;
+    }
+
+}
+ul li{
+    text-transform: capitalize;
+}
+.container h2{
+    text-align: center;
+    text-transform: capitalize;
+}
+@keyframes bgcolor {
+    20%{
+            background-color: lightblue;
+    }
+    40%{
+            background-color: rgb(12, 204, 60);
+    }
+    60%{
+            background-color: lightgreen;
+    }
+    80%{
+            background-color: rgb(218, 108, 125);
+    }
+    100%{
+            background-color:#8bf0ba;
+    }
+}
