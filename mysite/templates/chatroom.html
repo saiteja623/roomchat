@@ -16,7 +16,7 @@
 <input type="submit" id="submit" value="send">
 </div>
 <script>
-var roomname='{{room_name}}';
+var roomname='{{room_name}}'; 
 var personName='{{person_name}}';
 var socket=new WebSocket(
     'ws://'+window.location.host+'/ws/chat/'+roomname+'/'+personName+'/'

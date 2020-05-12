@@ -1,0 +1,8 @@
+{
+    "editor.formatOnPaste": true,
+    "python.formatting.provider": "black",
+    "prettier.requireConfig": true,
+    "prettier.requirePragma": true,
+    "editor.formatOnSave": true,
+    "prettier.vueIndentScriptAndStyle": true
+}
