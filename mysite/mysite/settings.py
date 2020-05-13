@@ -42,6 +42,8 @@ INSTALLED_APPS = [
     "app",
     "chatapp",
     "channels",
+    "todolist",
+    "django_static_fontawesome",
 ]
 
 MIDDLEWARE = [

@@ -1,11 +1,14 @@
+body{
+        overflow-y:hidden;
+}
 .container{
         background-color:#feb300;
         border:solid 1px black;
         padding-left:20px;
         min-height:160px; 
-        max-height:230px;
+        max-height:260px;
         width:490px;
-        margin:170px auto;
+        margin:140px auto ;
 }
 #icon {
         position:absolute;
@@ -57,4 +60,13 @@
         background-color:white;
         padding:6px;
 
+}
+@media only screen and (max-width:600px){
+        .container{
+                width:97%;
+                padding-left:7px;
+        }
+        .heading{
+                font-size:20px;
+        }
 }

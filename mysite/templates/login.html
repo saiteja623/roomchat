@@ -50,10 +50,10 @@ Didn't have an account?<a href="register">signup</a></span>
 <div class="container2">
 <a href="#" class="close">&times;</a><br>
 <div class="login" style="color:white;">We will sent a OTP to your GMAIL account</div>
-		<div class="form">
-		<div class="inf">
 		<form action="send_otp" method="post">
 		{% csrf_token %}
+		<div class="form">
+		<div class="inf">
 		<input type="email" name="gmail" required>
 		<label for="email">EMAIL</label>
 		</div>

@@ -1,32 +1,63 @@
-.container{
-    background-color:#8bf0ba;
-    border:solid 1px black;
-    padding:20px;
-    border-radius:10px;
+body{
+    background:#f4acb7;
+    overflow:hidden;
+}
+#container{
+    margin:80px 300px;
+    position: relative;
+    border:none;
+    outline:none;
+    background:white;
+    padding:6px;
     min-height:400px;
     width:590px;
     font-size:20px;
     margin:80px 640px;
-    color:#0e0fed;
-    position:absolute;
-    animation:bgcolor 20s ease infinite;
-} 
-.container input{
+    color:black;
+    box-shadow:5px 6px 5px gray;
+
+}
+#container #valid1{
+    border-top:none;
+    border-left:none;
+    border-right:none;
+    border-bottom:1px solid black;
     padding-left:8px;
     padding-top:3px;
     font-size:17px;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    width:80%;
+    background:transparent;
+    font-family: sans-serif;
 }
-body{
-    background-size:cover;
+#container button{
+    background:#00171f;
+    color:white;
+    cursor:pointer;
+    margin:8px;
+    padding:6px;
 }
-.image{
-    margin-top:150px;
-    margin-left:100px;
-    float:left;
-    opacity:0.5;
-    width:100px;
-    height:100px;
+#container #delete{
+    border:none;
+    outline:none;
+    background:orange;
+    padding:4px;
+    margin:4px;
+    cursor:pointer;
+}
+#logout{
+    background:#2a9d8f;
+    color:white;
+     padding:4px;
+    margin:4px;
+    cursor:pointer;
+}
+#results{
+    font-weight:700;
+    width:100%;
+    height:210px;
+    overflow-y: scroll;
+    scrollbar-width: none;
+    font-family: sans-serif;
 }
 .heading{
     color:white;
@@ -68,24 +99,25 @@ body{
 ul li{
     text-transform: capitalize;
 }
-.container h2{
+#container h2{
     text-align: center;
     text-transform: capitalize;
 }
-@keyframes bgcolor {
-    20%{
-            background-color: lightblue;
+
+@media only screen and (max-width:600px){
+    .image{
+        display:none;
     }
-    40%{
-            background-color: rgb(12, 204, 60);
+    #container{
+        margin:30px auto;
+        width:96%;
     }
-    60%{
-            background-color: lightgreen;
+    button{
+        margin:0;
     }
-    80%{
-            background-color: rgb(218, 108, 125);
-    }
-    100%{
-            background-color:#8bf0ba;
+}
+@media only screen and (max-width:900px){
+    #container{
+        margin:30px auto;
     }
 }

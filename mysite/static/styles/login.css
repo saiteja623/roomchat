@@ -93,9 +93,6 @@ body{
         background-color:rgba(0, 0, 0, 0.7);
         box-shadow: 0 15px 25px rgba(0, 0, 0, 0.5);
 }
-#total{
-    display:none;
-}
 #loading{
     position:absolute;
     z-index:1;

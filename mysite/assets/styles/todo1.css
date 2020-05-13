@@ -89,3 +89,12 @@ ul li{
             background-color:#8bf0ba;
     }
 }
+@media only screen and (max-width:600px){
+    .image{
+        display:none;
+    }
+    .container{
+        margin:30px auto;
+        width:90%;
+    }
+}
